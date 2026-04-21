@@ -10,6 +10,7 @@ function Menu() {
         <Link to="/login">Login</Link>
         <Link to="/cadastro">Cadastro</Link>
         <Link to="/sobre">Sobre</Link>
+        <Link to="/exercicios">Exercícios</Link>
       </nav>
     </header>
   )
