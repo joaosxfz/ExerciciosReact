@@ -3,6 +3,7 @@ import './App.css'
 import Menu from './components/Menu'
 import Exercicios from './pages/Exercicios'
 import Sobre from './pages/Sobre'
+import Cadastro from './pages/Cadastro'
 import Ex01 from './pages/Exercicios/Ex01'
 import Ex02 from './pages/Exercicios/Ex02'
 import Ex03 from './pages/Exercicios/Ex03'
@@ -29,8 +30,9 @@ function App() {
     <>
       <Menu />
       <Routes>
-        <Route path='/sobre' element={<Sobre />} />
-        <Route path='/exercicios' element={<Exercicios />} />
+        <Route path='/Cadastro' element={<Cadastro />} />
+        <Route path='/Sobre' element={<Sobre />} />
+        <Route path='/Exercicios' element={<Exercicios />} />
         <Route path='/Ex01' element={<Ex01 />} />
         <Route path='/Ex02' element={<Ex02 />} />
         <Route path='/Ex03' element={<Ex03 />} />

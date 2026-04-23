@@ -7,7 +7,6 @@ function Menu() {
       <h1>Exercícios React</h1>
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/login">Login</Link>
         <Link to="/cadastro">Cadastro</Link>
         <Link to="/sobre">Sobre</Link>
         <Link to="/exercicios">Exercícios</Link>
