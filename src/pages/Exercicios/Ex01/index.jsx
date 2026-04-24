@@ -1,28 +1,45 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 function Ex01() {
+    const [nomeproduto, setNomeproduto] = useState("NomeProduto")
+    const [preco, setPreco ] = useState("Preço")
+    const [resultado, setResultado] = useState("Resultado")
+
+    function handleSubmit(event) {
+        event.preventDefault()
+        console.log (nomeproduto, preco)
+        setResultado()
+    }
+
+
     return (
-        <main>
+        <>
+            <h2>Exercício 01</h2>
+            <p>1. Peça ao usuário o nome de um produto e o preço.
+                Mostre uma mensagem dizendo quanto custa o produto.</p>
+
             <section>
-                <h2>Exercício 01</h2>
-                <p>1. Peça ao usuário o nome de um produto e o preço.
-                    Mostre uma mensagem dizendo quanto custa o produto.</p>
-            </section>
-            <section>
+
                 <form>
-                    <p>Nome Completo</p>
-                    <input type="text" />
-                    <p>CPF:</p>
-                    <input type="text" />
-                    <p>Telefone</p>
-                    <input type="text" />
-                    <p>Email</p>
-                    <input type="text" />
-                    <p>Senha</p>
-                    <input type="text" />
+                    <isabel>Nome do Produto</isabel>
+                    <input
+                        type="text"
+                        value={nomeproduto}
+                        onChange={(event) => setNomeproduto(event.target.value)}
+                    />
+                    <isabel>Preço</isabel>
+                    <input
+                        type="text"
+                        value={preco}
+                        onChange={(event) => setPreco(event.target.value)}
+                    />
+
+                    <p>{resultado}</p>
+
                 </form>
             </section>
-        </main>
+        </>
     )
 }
 
